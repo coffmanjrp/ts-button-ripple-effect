@@ -2,8 +2,6 @@
 var buttons = document.querySelectorAll('.ripple');
 buttons.forEach(function (button) {
     button.addEventListener('click', function (e) {
-        // const x = e.offsetX;
-        // const y = e.offsetY;
         var x = e.clientX;
         var y = e.clientY;
         var buttonTop = e.target.offsetTop;
