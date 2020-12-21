@@ -1,0 +1,33 @@
+@import 'config';
+
+button {
+  position: relative;
+  margin: 10px 0;
+  padding: 20px 30px;
+  background: purple;
+  border: 1px solid purple;
+  font-size: 0.875rem;
+  color: #fff;
+  text-transform: uppercase;
+  letter-spacing: 0.125rem;
+  overflow: hidden;
+  &:focus {
+    outline: none;
+  }
+  .circle {
+    position: absolute;
+    width: 100px;
+    height: 100px;
+    background: #fff;
+    border-radius: 50%;
+    transform: translate(-50%, -50%) scale(0);
+    animation: scale 0.5s ease-out;
+  }
+}
+
+@keyframes scale {
+  to {
+    transform: translate(-50%, -50%) scale(3);
+    opacity: 0;
+  }
+}
