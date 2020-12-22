@@ -1,4 +1,6 @@
-const buttons = document.querySelectorAll('.ripple');
+const buttons = document.querySelectorAll(
+  '.ripple'
+) as NodeListOf<HTMLButtonElement>;
 
 buttons.forEach((button) => {
   button.addEventListener('click', function (e) {
