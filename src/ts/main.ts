@@ -7,8 +7,8 @@ buttons.forEach((button) => {
     const x = e.clientX;
     const y = e.clientY;
 
-    const buttonTop = e.target!.offsetTop;
-    const buttonLeft = e.target!.offsetLeft;
+    const buttonTop = (e.target as HTMLButtonElement).offsetTop;
+    const buttonLeft = (e.target as HTMLButtonElement).offsetLeft;
 
     const xInside = x - buttonLeft;
     const yInside = y - buttonTop;
